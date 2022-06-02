@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "photop-client": "^3.3.0"
+    "photop-client": "^3.3.0",
+    "simple-json-db": "^2.0.0"
   }
 }
