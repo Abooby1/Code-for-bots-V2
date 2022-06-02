@@ -3,7 +3,7 @@ const {Client} = require('photop-client')
 const client = new Client({username: 'Abicam_Engine', password: process.env['Pass']})
 
 const JSONdb = require('simple-json-db')
-const db = new JSONdb('storage.json')
+const db = new JSONdb('storage.json')//make sure to make a file called "storage.json"
 
 const START = 'testing' //the thing someone has to post to connect the bot
 const STARTTEXT = 'test' //the chat the bot sends when someone connects a post
