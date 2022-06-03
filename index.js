@@ -1,6 +1,6 @@
 const {Client} = require('photop-client')
 
-const client = new Client({username: 'Abicam_Engine', password: process.env['Pass']})
+const client = new Client({username: 'username', password: 'password'})
 
 const JSONdb = require('simple-json-db')
 const db = new JSONdb('storage.json')//make sure to make a file called "storage.json"
