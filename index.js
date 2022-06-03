@@ -54,7 +54,7 @@ client.onPost = async (post) => {
     resettime()
     post.onChat = async (chat) => {
       resettime()
-      if (chat.text.toLowerCase().startsWith(PREFIX)) {
+      if (chat.text.toString().toLowerCase().startsWith(PREFIX)) {
         const match = chat.text.substring(PREFIX.length).match(/([a-z0-9\.]+)(.*)/i);
         if (match) {
           const [_, commandname,  _body] = match;
