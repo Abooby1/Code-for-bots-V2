@@ -46,7 +46,7 @@ client.onPost = async (post) => {
       post.chat(STARTTEXT)
     }, 2500)
     const resettime = await post.connect(TIME, () => {
-      post.onChat = noop; //replace post.onChat to free up memory
+      post.onChat = () => { }; //replace post.onChat to free up memory
       if (post.text == START) {
         post.chat("Bot has disconnected... Reason: inactivity")
       }
