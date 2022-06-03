@@ -5,11 +5,11 @@ const client = new Client({username: 'Abicam_Engine', password: process.env['Pas
 const JSONdb = require('simple-json-db')
 const db = new JSONdb('storage.json')//make sure to make a file called "storage.json"
 
-const START = 'testing' //the thing someone has to post to connect the bot
-const STARTTEXT = 'test' //the chat the bot sends when someone connects a post
-const TIME = 60000 //the time (in milliseconds) that the post is connected until disconnected because of inactivity
-const PREFIX = 'test!'//the prefix of the bot (no spaces)
-const WrongCommand = 'hey'//the text when someone does a command that does not exist
+const START = '' //the thing someone has to post to connect the bot
+const STARTTEXT = '' //the chat the bot sends when someone connects a post
+const TIME = 0 //the time (in milliseconds) that the post is connected until disconnected because of inactivity
+const PREFIX = ''//the prefix of the bot (no spaces)
+const WrongCommand = ''//the text when someone does a command that does not exist
 
 function getCom (c) {//all the commands
   switch (c) {
