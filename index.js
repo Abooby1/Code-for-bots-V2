@@ -102,5 +102,11 @@ client.onReady = () => {
     throw new Error(`Your 'WrongCommand' variable cant be empty...`)
   }
 
-  console.log(`Bot is ready!`)
+  let interval = setInterval(()=>{
+    if (client._network.simpleSocket.secureID) {
+      console.log("Bot is ready!")
+      main();
+      clearInterval(interval)
+    }
+  }, 100)
 }
